@@ -29,7 +29,7 @@ export default function FinalCTA() {
       {/* Background Image */}
       <div className="absolute inset-0" style={{ background: "#3a3530" }}>
         <HotelImage
-          src="/images/hotel/facade.webp"
+          src="/images/hotel/facade.jpg"
           alt="Fachada do Acordes Apart Hotel"
           fill
           sizes="100vw"

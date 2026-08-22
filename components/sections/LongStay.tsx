@@ -114,7 +114,7 @@ export default function LongStay() {
               style={{ aspectRatio: "4/3", background: "#d6cfc4" }}
             >
               <HotelImage
-                src="/images/hotel/long-stay.webp"
+                src="/images/hotel/long-stay.jpg"
                 alt="Quarto para estadia prolongada no Acordes Apart Hotel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

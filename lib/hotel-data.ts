@@ -21,10 +21,10 @@ export const hotel = {
       name: "Standard",
       description:
         "Uma opção confortável e prática para quem procura uma estadia funcional no centro de Santiago. Quarto equipado com o essencial para uma boa noite de descanso.",
-      image: "/images/hotel/standard-01.webp",
+      image: "/images/hotel/standard-01.jpg",
       images: [
-        "/images/hotel/standard-01.webp",
-        "/images/hotel/standard-02.webp",
+        "/images/hotel/standard-01.jpg",
+        "/images/hotel/standard-02.jpg",
       ],
       amenities: [], // DADO_A_CONFIRMAR
     },
@@ -33,10 +33,9 @@ export const hotel = {
       name: "Superluxo",
       description:
         "Mais estrutura e comodidade para quem deseja uma estadia ainda mais completa. Inclui sala, cozinha e itens que tornam a hospedagem mais parecida com um lar.",
-      image: "/images/hotel/superluxo-01.webp",
+      image: "/images/hotel/superluxo-01.jpg",
       images: [
-        "/images/hotel/superluxo-01.webp",
-        "/images/hotel/superluxo-02.webp",
+        "/images/hotel/superluxo-01.jpg",
       ],
       amenities: ["Ar-condicionado", "TV", "Frigobar", "Sala/cozinha"],
     },

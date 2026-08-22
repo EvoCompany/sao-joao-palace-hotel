@@ -84,7 +84,7 @@ export default function About() {
               style={{ aspectRatio: "4/5", background: "#d6cfc4" }}
             >
               <HotelImage
-                src="/images/hotel/reception.webp"
+                src="/images/hotel/reception.jpg"
                 alt="Recepção do Acordes Apart Hotel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

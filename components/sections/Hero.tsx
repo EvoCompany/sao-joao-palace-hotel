@@ -36,7 +36,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0" style={{ background: "#4a4540" }}>
         <HotelImage
-          src="/images/hotel/hero.webp"
+          src="/images/hotel/hero.jpg"
           alt="Acordes Apart Hotel — Vista do hotel"
           fill
           priority

@@ -1,6 +1,50 @@
 import { Star, ExternalLink } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
+const reviews = [
+  {
+    name: "Antonio D.",
+    rating: 5,
+    date: "Setembro 2018",
+    text: "Hotel muito bom, com boas acomodações e quarto espaçoso. Excelente localização no centro da cidade.",
+  },
+  {
+    name: "Rubiadc",
+    rating: 5,
+    date: "Março 2018",
+    text: "O quarto era simples e confortável. O chuveiro é excelente e as toalhas boas. Recomendo para quem busca praticidade no centro.",
+  },
+  {
+    name: "heckmann17183",
+    rating: 4,
+    date: "Maio 2022",
+    text: "Hotel na área central, próximo da praça, prefeitura e igreja. Apartamento espaçoso com TV, split e Wi-Fi. Estacionamento gratuito.",
+  },
+  {
+    name: "Linda K.",
+    rating: 4,
+    date: "Novembro 2016",
+    text: "A localização é excelente, bem no centro da cidade. É espaçoso, o ambiente é limpo e o atendimento é muito bom.",
+  },
+];
+
+function StarRating({ rating }: { rating: number }) {
+  return (
+    <div className="flex items-center gap-0.5">
+      {[...Array(5)].map((_, i) => (
+        <Star
+          key={i}
+          className="w-4 h-4"
+          style={{
+            color: "#8C352D",
+            fill: i < rating ? "#8C352D" : "none",
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function Reviews() {
   return (
     <section
@@ -15,71 +59,79 @@ export default function Reviews() {
             headline="O que dizem os hóspedes."
             align="center"
           />
+          <p
+            className="font-inter font-light mt-4"
+            style={{ fontSize: "0.875rem", color: "#72706C" }}
+          >
+            Via TripAdvisor
+          </p>
         </div>
 
-        {/* Placeholder state */}
-        <div className="max-w-2xl mx-auto">
-          <div
-            className="flex flex-col items-center text-center px-10 py-16"
-            style={{
-              background: "#FFFFFF",
-              border: "1px solid rgba(114,112,108,0.12)",
-            }}
-          >
-            <div className="flex items-center gap-1 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="w-6 h-6"
-                  style={{ color: "#8C352D", fill: "#8C352D" }}
-                />
-              ))}
-            </div>
-
-            <p
-              className="font-cormorant font-light leading-relaxed mb-3"
-              style={{ fontSize: "1.5rem", color: "#202020" }}
-            >
-              &ldquo;Em breve, depoimentos de quem já se hospedou.&rdquo;
-            </p>
-            <p
-              className="font-inter font-light leading-relaxed mb-10"
-              style={{ fontSize: "0.9375rem", color: "#72706C", maxWidth: "30rem" }}
-            >
-              Estamos reunindo as experiências dos nossos hóspedes. Volte em breve para ver o que eles têm a dizer sobre a estadia no Acordes Apart Hotel.
-            </p>
-
+        {/* Reviews grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {reviews.map((review) => (
             <div
-              className="w-16 mb-10"
-              style={{ height: "1px", background: "rgba(114,112,108,0.2)" }}
-            />
-
-            <a
-              href="https://www.google.com/maps/search/Acordes+Apart+Hotel+Santiago+RS"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-inter text-sm font-medium px-7 py-3.5 transition-all duration-200"
+              key={review.name}
+              className="p-8"
               style={{
-                color: "#202020",
-                border: "1px solid rgba(32,32,32,0.2)",
-                background: "transparent",
+                background: "#FFFFFF",
+                border: "1px solid rgba(114,112,108,0.1)",
               }}
             >
-              Ver avaliações no Google
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
+              <div className="flex items-start justify-between mb-5">
+                <div>
+                  <p
+                    className="font-inter font-medium text-sm mb-1"
+                    style={{ color: "#202020" }}
+                  >
+                    {review.name}
+                  </p>
+                  <p
+                    className="font-inter text-xs"
+                    style={{ color: "#72706C" }}
+                  >
+                    {review.date}
+                  </p>
+                </div>
+                <StarRating rating={review.rating} />
+              </div>
 
+              <p
+                className="font-cormorant font-light leading-relaxed"
+                style={{ fontSize: "1.25rem", color: "#202020" }}
+              >
+                &ldquo;{review.text}&rdquo;
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <a
+            href="https://www.tripadvisor.com.br/Hotel_Review-g2345093-d1580853-Reviews-Acordes_Apart_Hotel-Santiago_State_of_Rio_Grande_do_Sul.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-inter text-sm font-medium px-7 py-3.5 transition-all duration-200"
+            style={{
+              color: "#202020",
+              border: "1px solid rgba(32,32,32,0.2)",
+              background: "transparent",
+            }}
+          >
+            Ver todas as avaliações no TripAdvisor
+            <ExternalLink className="w-4 h-4" />
+          </a>
           <p
-            className="text-center font-inter text-xs mt-6"
-            style={{ color: "rgba(114,112,108,0.6)" }}
+            className="font-inter text-xs"
+            style={{ color: "rgba(114,112,108,0.7)" }}
           >
             Você se hospedou no Acordes?{" "}
             <a
               href="https://www.google.com/maps/search/Acordes+Apart+Hotel+Santiago+RS"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline transition-colors"
+              className="underline"
               style={{ color: "#8C352D" }}
             >
               Deixe sua avaliação no Google.

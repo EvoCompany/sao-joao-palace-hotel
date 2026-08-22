@@ -32,7 +32,7 @@ export default function Breakfast() {
               style={{ aspectRatio: "3/2", background: "#d6cfc4" }}
             >
               <HotelImage
-                src="/images/hotel/breakfast.webp"
+                src="/images/hotel/breakfast.jpg"
                 alt="Café da manhã no Acordes Apart Hotel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
