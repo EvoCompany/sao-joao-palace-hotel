@@ -31,22 +31,13 @@ export function HotelImage({
   if (error) {
     return (
       <div
-        className={`flex items-end justify-start ${className}`}
+        className={`w-full h-full ${className}`}
+        aria-label={alt}
         style={{
           background:
-            "linear-gradient(135deg, #d6cfc4 0%, #bdb5a8 50%, #a09890 100%)",
+            "linear-gradient(160deg, #cdc5ba 0%, #b8b0a4 40%, #a69e95 100%)",
         }}
-      >
-        <span
-          className="font-inter text-xs m-3 px-2 py-1 rounded"
-          style={{
-            color: "rgba(32,32,32,0.5)",
-            background: "rgba(247,244,239,0.4)",
-          }}
-        >
-          {label || src.split("/").pop()}
-        </span>
-      </div>
+      />
     );
   }
 
