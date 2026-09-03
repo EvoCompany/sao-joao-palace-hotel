@@ -1,22 +1,14 @@
 "use client";
 
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
 import { hotel } from "@/lib/hotel-data";
 
 export default function Header() {
-  const { scrollY } = useScroll();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const unsubscribe = scrollY.on("change", (v) => {
-      setScrolled(v > 60);
-    });
-    return unsubscribe;
-  }, [scrollY]);
 
   const handleAnchorClick = (href: string) => {
     setMobileOpen(false);
@@ -30,12 +22,12 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className="fixed top-0 left-0 right-0 z-40 transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-40"
         style={{
-          background: scrolled ? "rgba(247,244,239,0.97)" : "transparent",
-          backdropFilter: scrolled ? "blur(12px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(114,112,108,0.15)" : "1px solid transparent",
-          boxShadow: scrolled ? "0 2px 24px rgba(32,32,32,0.06)" : "none",
+          background: "rgba(247,244,239,0.97)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(114,112,108,0.15)",
+          boxShadow: "0 2px 24px rgba(32,32,32,0.06)",
         }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
@@ -43,27 +35,16 @@ export default function Header() {
           <a
             href="#inicio"
             onClick={(e) => { e.preventDefault(); handleAnchorClick("#inicio"); }}
-            className="flex flex-col leading-none"
+            className="flex items-center"
           >
-            <span
-              className="font-cormorant font-medium"
-              style={{
-                fontSize: "1.625rem",
-                color: scrolled ? "#202020" : "#F7F4EF",
-                letterSpacing: "0.02em",
-              }}
-            >
-              Acordes
-            </span>
-            <span
-              className="font-inter font-light tracking-[0.18em] uppercase"
-              style={{
-                fontSize: "0.575rem",
-                color: scrolled ? "#72706C" : "rgba(247,244,239,0.75)",
-              }}
-            >
-              Apart Hotel
-            </span>
+            <Image
+              src="/images/hotel/logotipo.png"
+              alt="São João Palace Hotel"
+              width={240}
+              height={135}
+              className="h-8 md:h-10 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -74,14 +55,12 @@ export default function Header() {
                 href={link.href}
                 onClick={(e) => { e.preventDefault(); handleAnchorClick(link.href); }}
                 className="font-inter text-sm font-medium transition-colors duration-200"
-                style={{ color: scrolled ? "#72706C" : "rgba(247,244,239,0.85)" }}
+                style={{ color: "#72706C" }}
                 onMouseEnter={(e) =>
                   ((e.target as HTMLElement).style.color = "#8C352D")
                 }
                 onMouseLeave={(e) =>
-                  ((e.target as HTMLElement).style.color = scrolled
-                    ? "#72706C"
-                    : "rgba(247,244,239,0.85)")
+                  ((e.target as HTMLElement).style.color = "#72706C")
                 }
               >
                 {link.label}
@@ -94,7 +73,7 @@ export default function Header() {
             <a
               href={`tel:+55${hotel.phone.replace(/\D/g, "")}`}
               className="font-inter text-sm font-medium transition-colors duration-200"
-              style={{ color: scrolled ? "#72706C" : "rgba(247,244,239,0.8)" }}
+              style={{ color: "#72706C" }}
             >
               {hotel.phone}
             </a>
@@ -122,8 +101,8 @@ export default function Header() {
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden p-2 transition-colors"
-            style={{ color: scrolled ? "#202020" : "#F7F4EF" }}
+            className="md:hidden p-3 -mr-1 transition-colors"
+            style={{ color: "#202020" }}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >

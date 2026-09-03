@@ -13,6 +13,7 @@ export function MobileConversionBar() {
         background: "#F7F4EF",
         borderTop: "1px solid rgba(114,112,108,0.2)",
         boxShadow: "0 -4px 24px rgba(32,32,32,0.08)",
+        paddingBottom: "env(safe-area-inset-bottom, 0px)",
       }}
     >
       <div className="flex h-[72px]">

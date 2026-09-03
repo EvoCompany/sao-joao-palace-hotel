@@ -13,7 +13,7 @@ export default function Amenities() {
       style={{ background: "#FFFFFF" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
           {/* Heading */}
           <div className="flex flex-col justify-center">
             <SectionHeading
@@ -24,7 +24,7 @@ export default function Amenities() {
           </div>
 
           {/* Items */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
             {hotel.amenities.map((item, index) => {
               const Icon = ICONS[item.icon as IconKey];
               return (

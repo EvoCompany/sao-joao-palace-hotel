@@ -13,7 +13,7 @@ export default function Footer() {
         borderTop: "1px solid rgba(247,244,239,0.06)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-[88px] md:pb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {/* Brand */}
           <div>
@@ -22,13 +22,13 @@ export default function Footer() {
                 className="font-cormorant font-medium block"
                 style={{ fontSize: "1.5rem", color: "#F7F4EF", letterSpacing: "0.02em" }}
               >
-                Acordes
+                São João
               </span>
               <span
                 className="font-inter font-light tracking-[0.18em] uppercase block"
                 style={{ fontSize: "0.55rem", color: "rgba(247,244,239,0.45)" }}
               >
-                Apart Hotel
+                Palace Hotel
               </span>
             </div>
             <p
@@ -118,7 +118,7 @@ export default function Footer() {
             className="font-inter font-light text-xs"
             style={{ color: "rgba(247,244,239,0.3)" }}
           >
-            © {currentYear} Acordes Apart Hotel. Todos os direitos reservados.
+            © {currentYear} São João Palace Hotel. Todos os direitos reservados.
           </p>
           <a
             href={hotel.googleMapsUrl}

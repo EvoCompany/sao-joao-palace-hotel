@@ -23,7 +23,7 @@ export default function BenefitsBar() {
             return (
               <div
                 key={benefit.icon}
-                className="flex flex-col items-start gap-3 py-8 px-6 md:px-8"
+                className="flex flex-col items-start gap-3 py-6 px-4 md:py-8 md:px-6"
                 style={{
                   borderRight:
                     index < 3 && !isLastInFirstRow

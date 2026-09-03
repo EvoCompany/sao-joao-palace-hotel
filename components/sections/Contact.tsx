@@ -195,7 +195,7 @@ export default function Contact() {
                 className="font-inter font-light mt-3"
                 style={{ fontSize: "0.875rem", color: "#72706C" }}
               >
-                — Equipe Acordes Apart Hotel
+                — Equipe São João Palace Hotel
               </p>
             </div>
           </motion.div>
@@ -208,7 +208,7 @@ export default function Contact() {
           >
             {submitted ? (
               <div
-                className="flex flex-col items-center justify-center text-center h-full p-12"
+                className="flex flex-col items-center justify-center text-center h-full p-8 sm:p-12"
                 style={{
                   background: "#FFFFFF",
                   border: "1px solid rgba(114,112,108,0.12)",
@@ -246,7 +246,7 @@ export default function Contact() {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="p-8 md:p-10 space-y-5"
+                className="p-5 sm:p-8 md:p-10 space-y-5"
                 style={{
                   background: "#FFFFFF",
                   border: "1px solid rgba(114,112,108,0.12)",
@@ -374,8 +374,9 @@ export default function Contact() {
                       style={inputStyles}
                     >
                       <option value="">Não sei ainda</option>
-                      <option value="standard">Standard</option>
-                      <option value="superluxo">Superluxo</option>
+                      <option value="solteiro-luxo">Solteiro Luxo</option>
+                      <option value="casal-standard">Casal Standard</option>
+                      <option value="casal-luxo">Casal Luxo</option>
                     </select>
                   </div>
                 </div>

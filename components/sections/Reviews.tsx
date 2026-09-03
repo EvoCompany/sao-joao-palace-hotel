@@ -3,6 +3,18 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const reviews = [
   {
+    name: "heckmann17183",
+    rating: 4,
+    date: "Maio 2022",
+    text: "Hotel na área central, próximo da praça central, prefeitura e igreja. Apartamento espaçoso com TV, split e Wi-Fi. Café da manhã incluso e estacionamento gratuito.",
+  },
+  {
+    name: "Victor V.",
+    rating: 4,
+    date: "Outubro 2019",
+    text: "Ótima localização, apartamento espaçoso e bem equipado, com antecâmara. Café da manhã incluso e atendimento atencioso. Boa relação custo-benefício para quem precisa de conforto no centro de Santiago.",
+  },
+  {
     name: "Antonio D.",
     rating: 5,
     date: "Setembro 2018",
@@ -12,19 +24,7 @@ const reviews = [
     name: "Rubiadc",
     rating: 5,
     date: "Março 2018",
-    text: "O quarto era simples e confortável. O chuveiro é excelente e as toalhas boas. Recomendo para quem busca praticidade no centro.",
-  },
-  {
-    name: "heckmann17183",
-    rating: 4,
-    date: "Maio 2022",
-    text: "Hotel na área central, próximo da praça, prefeitura e igreja. Apartamento espaçoso com TV, split e Wi-Fi. Estacionamento gratuito.",
-  },
-  {
-    name: "Linda K.",
-    rating: 4,
-    date: "Novembro 2016",
-    text: "A localização é excelente, bem no centro da cidade. É espaçoso, o ambiente é limpo e o atendimento é muito bom.",
+    text: "O quarto era simples e confortável. O chuveiro é excelente e as toalhas boas. Café da manhã variado e atendimento atencioso. Recomendo para quem busca praticidade no centro.",
   },
 ];
 
@@ -68,11 +68,11 @@ export default function Reviews() {
         </div>
 
         {/* Reviews grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-12">
           {reviews.map((review) => (
             <div
               key={review.name}
-              className="p-8"
+              className="p-5 md:p-8"
               style={{
                 background: "#FFFFFF",
                 border: "1px solid rgba(114,112,108,0.1)",
@@ -98,7 +98,7 @@ export default function Reviews() {
 
               <p
                 className="font-cormorant font-light leading-relaxed"
-                style={{ fontSize: "1.25rem", color: "#202020" }}
+                style={{ fontSize: "clamp(1rem, 3vw, 1.25rem)", color: "#202020" }}
               >
                 &ldquo;{review.text}&rdquo;
               </p>

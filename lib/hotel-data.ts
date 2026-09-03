@@ -1,92 +1,99 @@
 export const hotel = {
-  name: "Acordes Apart Hotel",
-  tagline: "Conforto e praticidade no coração de Santiago.",
+  name: "São João Palace Hotel",
+  tagline: "Conforto e hospitalidade na BR 287, no interior do Rio Grande do Sul.",
   address: {
-    street: "Rua Duque de Caxias, 810",
-    district: "Centro",
+    street: "BR 287, Km 398",
+    district: "Segundo trevo de Santiago",
     city: "Santiago",
     state: "RS",
   },
-  phone: "(55) 3251-1664",
-  email: "hotelacordes@hotmail.com",
-  whatsapp: null, // DADO_A_CONFIRMAR
-  instagram: null, // DADO_A_CONFIRMAR
+  phone: "(55) 3251-4200",
+  phoneMobile: "(55) 98449-1088",
+  email: "reservas@saojoaopalacehotel.com.br",
+  whatsapp: "(55) 3251-4088",
+  whatsappLink: "https://api.whatsapp.com/send?phone=555532514088",
+  bookingEngine: "https://hbook.hsystem.com.br/Booking?companyId=615dfbd77a4136ecc8fb92e1",
+  instagram: null,
   googleMapsUrl:
-    "https://maps.google.com/?q=Rua+Duque+de+Caxias,+810,+Centro,+Santiago,+RS",
+    "https://maps.google.com/?q=BR+287,+Km+398,+Santiago,+RS",
   checkIn: "DADO_A_CONFIRMAR",
   checkOut: "DADO_A_CONFIRMAR",
   rooms: [
     {
-      id: "standard",
-      name: "Standard",
+      id: "solteiro-luxo",
+      name: "Solteiro Luxo",
       description:
-        "Uma opção confortável e prática para quem procura uma estadia funcional no centro de Santiago. Quarto equipado com o essencial para uma boa noite de descanso.",
-      image: "/images/hotel/standard-01.jpg",
-      images: [
-        "/images/hotel/standard-01.jpg",
-        "/images/hotel/standard-02.jpg",
-      ],
-      amenities: [], // DADO_A_CONFIRMAR
+        "Apartamentos Solteiro com todo conforto e estrutura necessária para uma estadia inesquecível. Equipado com TV de LED, telefone, banheiro privativo, ar split, frigobar e secador de cabelo.",
+      image: "/images/hotel/gallery-02.jpg",
+      images: ["/images/hotel/gallery-02.jpg"],
+      amenities: ["TV LED", "Telefone", "Banheiro privativo", "Ar split", "Frigobar", "Secador de cabelo"],
     },
     {
-      id: "superluxo",
-      name: "Superluxo",
+      id: "casal-standard",
+      name: "Casal Standard",
       description:
-        "Mais estrutura e comodidade para quem deseja uma estadia ainda mais completa. Inclui sala, cozinha e itens que tornam a hospedagem mais parecida com um lar.",
-      image: "/images/hotel/superluxo-01.jpg",
-      images: [
-        "/images/hotel/superluxo-01.jpg",
-      ],
-      amenities: ["Ar-condicionado", "TV", "Frigobar", "Sala/cozinha"],
+        "Apartamentos Casal com todo conforto e estrutura necessária para uma estadia inesquecível. Equipado com TV de LED, telefone, banheiro privativo, ar split e secador de cabelo.",
+      image: "/images/hotel/gallery-03.jpg",
+      images: ["/images/hotel/gallery-03.jpg"],
+      amenities: ["TV LED", "Telefone", "Banheiro privativo", "Ar split", "Secador de cabelo"],
+    },
+    {
+      id: "casal-luxo",
+      name: "Casal Luxo",
+      description:
+        "Apartamentos Casal com todo conforto e estrutura necessária para uma estadia inesquecível. Equipado com TV de LED, telefone, banheiro privativo, ar split, frigobar e secador de cabelo.",
+      image: "/images/hotel/gallery-04.jpg",
+      images: ["/images/hotel/gallery-04.jpg"],
+      amenities: ["TV LED", "Telefone", "Banheiro privativo", "Ar split", "Frigobar", "Secador de cabelo"],
     },
   ],
   benefits: [
     {
       icon: "MapPin",
-      title: "No centro de Santiago",
-      description: "Próximo ao comércio, restaurantes e serviços.",
+      title: "Localização privilegiada",
+      description: "Na BR 287, Km 398 — fácil acesso e estacionamento seguro.",
     },
     {
       icon: "Coffee",
       title: "Café da manhã incluso",
-      description: "Mais praticidade para começar o dia.",
+      description: "Comece o dia com energia para sua estadia em Santiago.",
     },
     {
       icon: "Wifi",
       title: "Wi-Fi gratuito",
-      description: "Conectividade para trabalho ou lazer.",
+      description: "Conectividade em todas as áreas do hotel.",
     },
     {
       icon: "Sparkles",
-      title: "Conforto e limpeza",
-      description: "Ambientes preparados cuidadosamente para receber você.",
+      title: "78 apartamentos",
+      description: "8 categorias de acomodações para atender todas as necessidades.",
     },
   ],
   amenities: [
     {
       icon: "Coffee",
       title: "Café da manhã",
-      description: "Comece o dia com praticidade.",
+      description: "Buffet incluso todos os dias para os hóspedes.",
     },
     {
       icon: "Wifi",
       title: "Wi-Fi gratuito",
-      description: "Permaneça conectado durante sua hospedagem.",
+      description: "Disponível em todas as áreas do hotel.",
     },
     {
       icon: "MapPin",
-      title: "Localização central",
-      description: "Mais facilidade para acessar Santiago.",
+      title: "Restaurante ao lado",
+      description: "Batista Churrascaria com buffet e espeto corrido.",
     },
     {
       icon: "Sparkles",
-      title: "Limpeza",
-      description: "Ambientes preparados cuidadosamente.",
+      title: "Sala de eventos",
+      description: "Espaço para até 100 pessoas com equipamentos completos.",
     },
     {
       icon: "Calendar",
-      title: "Estadias prolongadas",
-      description: "Condições especiais para mensalistas.",
+      title: "Recepção 24 horas",
+      description: "Atendimento disponível a qualquer hora.",
     },
   ],
   conversionEvents: {
@@ -95,8 +102,8 @@ export const hotel = {
     whatsappClick: "click_whatsapp",
     directionsClick: "click_directions",
     formSubmit: "submit_availability",
-    roomViewStandard: "view_room_standard",
-    roomViewSuperluxo: "view_room_superluxo",
+    roomViewStandard: "view_room_solteiro_luxo",
+    roomViewSuperluxo: "view_room_casal_luxo",
     longStayClick: "click_long_stay",
   },
 };

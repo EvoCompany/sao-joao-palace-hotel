@@ -25,15 +25,14 @@ export default function FinalCTA() {
   const phoneRaw = hotel.phone.replace(/\D/g, "");
 
   return (
-    <section className="relative py-32 md:py-44 overflow-hidden" style={{ background: "#202020" }}>
+    <section className="relative py-16 md:py-28 lg:py-44 overflow-hidden" style={{ background: "#202020" }}>
       {/* Background Image */}
       <div className="absolute inset-0" style={{ background: "#3a3530" }}>
         <HotelImage
-          src="/images/hotel/facade.jpg"
+          src="/images/hotel/fachada.jpg"
           alt="Fachada do Acordes Apart Hotel"
           fill
           sizes="100vw"
-          label="facade.webp"
         />
         <div
           className="absolute inset-0"
@@ -62,7 +61,7 @@ export default function FinalCTA() {
           <h2
             className="font-cormorant font-light leading-none mb-6"
             style={{
-              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              fontSize: "clamp(1.75rem, 6vw, 4rem)",
               color: "#F7F4EF",
               letterSpacing: "-0.01em",
             }}

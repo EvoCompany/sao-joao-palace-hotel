@@ -38,7 +38,7 @@ export default function LongStay() {
       style={{ background: "#FFFFFF" }}
     >
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
           {/* Text */}
           <motion.div
             initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
@@ -54,13 +54,13 @@ export default function LongStay() {
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Para quem está em Santiago por mais tempo — seja a trabalho, tratamento de saúde ou outra necessidade — o Acordes Apart Hotel oferece condições especiais para estadias prolongadas e mensalistas.
+                Para quem está em Santiago por mais tempo — seja a trabalho, tratamento de saúde ou outra necessidade — o São João Palace Hotel oferece condições especiais para estadias prolongadas e mensalistas.
               </p>
               <p
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Nossa estrutura de apart hotel é perfeita para quem quer o conforto de um lar sem abrir mão dos serviços de um hotel.
+                Nossa estrutura com 78 apartamentos é perfeita para quem quer o conforto de um hotel completo sem abrir mão de nenhuma comodidade.
               </p>
             </div>
 
@@ -114,11 +114,10 @@ export default function LongStay() {
               style={{ aspectRatio: "4/3", background: "#d6cfc4" }}
             >
               <HotelImage
-                src="/images/hotel/long-stay.jpg"
-                alt="Quarto para estadia prolongada no Acordes Apart Hotel"
+                src="/images/hotel/gallery-04.jpg"
+                alt="Apartamento do São João Palace Hotel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                label="long-stay.webp"
               />
             </div>
             <div

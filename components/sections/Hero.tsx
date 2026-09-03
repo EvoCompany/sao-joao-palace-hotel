@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronDown, MapPin, Coffee, Wifi } from "lucide-react";
 import { hotel } from "@/lib/hotel-data";
-import { HotelImage } from "@/components/ui/HotelImage";
 
 const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
@@ -33,16 +32,17 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ minHeight: "100svh" }}
     >
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0" style={{ background: "#4a4540" }}>
-        <HotelImage
-          src="/images/hotel/hero.jpg"
-          alt="Acordes Apart Hotel — Vista do hotel"
-          fill
-          priority
-          sizes="100vw"
-          label="hero.webp"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-dolly-in.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Gradient Overlay */}
@@ -55,7 +55,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full py-32 pt-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full py-20 pt-32 md:py-32 md:pt-40">
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <motion.p
@@ -63,7 +63,7 @@ export default function Hero() {
             className="font-inter text-xs font-medium tracking-[0.22em] uppercase mb-6"
             style={{ color: "rgba(247,244,239,0.7)" }}
           >
-            Hospedagem no centro de Santiago — RS
+            Hotel em Santiago — RS · BR 287, Km 398
           </motion.p>
 
           {/* Headline */}
@@ -71,7 +71,7 @@ export default function Hero() {
             {...itemVariant(0.42 + baseDelay)}
             className="font-cormorant font-light leading-none mb-6"
             style={{
-              fontSize: "clamp(3rem, 7vw, 5.5rem)",
+              fontSize: "clamp(2.25rem, 8vw, 5.5rem)",
               color: "#F7F4EF",
               letterSpacing: "-0.01em",
             }}
@@ -89,7 +89,7 @@ export default function Hero() {
               maxWidth: "36rem",
             }}
           >
-            Acomodações bem cuidadas, café da manhã incluso e localização privilegiada para facilitar sua rotina ou seu descanso em Santiago.
+            78 apartamentos equipados com TV a cabo, ar condicionado, frigobar e Wi-Fi. A melhor opção no interior do Rio Grande do Sul.
           </motion.p>
 
           <motion.p
@@ -103,7 +103,7 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             {...itemVariant(0.7 + baseDelay)}
-            className="flex flex-wrap gap-4 mb-14"
+            className="flex flex-wrap gap-4 mb-10 md:mb-14"
           >
             <a
               href="#contato"
@@ -143,7 +143,7 @@ export default function Hero() {
             className="flex flex-wrap gap-3"
           >
             {[
-              { icon: MapPin, label: "Localização central" },
+              { icon: MapPin, label: "BR 287, Km 398 — Santiago" },
               { icon: Coffee, label: "Café da manhã incluso" },
               { icon: Wifi, label: "Wi-Fi gratuito" },
             ].map(({ icon: Icon, label }) => (

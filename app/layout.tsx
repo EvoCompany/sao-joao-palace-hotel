@@ -20,30 +20,30 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Acordes Apart Hotel | Hospedagem no Centro de Santiago - RS",
+  title: "São João Palace Hotel | Hospede-se com todo conforto em Santiago, RS",
   description:
-    "Hospede-se no Acordes Apart Hotel, no centro de Santiago - RS. Conforto, café da manhã, Wi-Fi e opções para estadias curtas ou prolongadas. Consulte disponibilidade.",
+    "Conheça o São João Palace Hotel, a melhor opção no interior do Rio Grande do Sul. 78 apartamentos, café da manhã, Wi-Fi e restaurante ao lado. Localizado na BR 287, Km 398, Santiago/RS.",
   keywords: [
     "Hotel em Santiago RS",
     "Hotel Santiago RS",
-    "Apart Hotel Santiago RS",
+    "São João Palace Hotel",
     "Hospedagem Santiago RS",
-    "Hotel mensalista Santiago RS",
-    "Hotel no centro de Santiago RS",
+    "Hotel BR 287 Santiago RS",
+    "Hotel interior Rio Grande do Sul",
   ],
   openGraph: {
-    title: "Acordes Apart Hotel | Hospedagem no Centro de Santiago - RS",
+    title: "São João Palace Hotel | Hospede-se com todo conforto em Santiago, RS",
     description:
-      "Hospede-se no Acordes Apart Hotel, no centro de Santiago - RS. Conforto, café da manhã, Wi-Fi e opções para estadias curtas ou prolongadas.",
+      "Conheça o São João Palace Hotel, a melhor opção no interior do Rio Grande do Sul. 78 apartamentos, café da manhã e restaurante ao lado. BR 287, Km 398, Santiago/RS.",
     type: "website",
     locale: "pt_BR",
-    siteName: "Acordes Apart Hotel",
+    siteName: "São João Palace Hotel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Acordes Apart Hotel | Hospedagem no Centro de Santiago - RS",
+    title: "São João Palace Hotel | Hospede-se com todo conforto em Santiago, RS",
     description:
-      "Hospede-se no Acordes Apart Hotel, no centro de Santiago - RS.",
+      "A melhor opção de hospedagem no interior do RS. BR 287, Km 398, Santiago/RS.",
   },
   robots: {
     index: true,
@@ -58,19 +58,18 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["Hotel", "LocalBusiness"],
-  name: "Acordes Apart Hotel",
+  name: "São João Palace Hotel",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Rua Duque de Caxias, 810",
+    streetAddress: "BR 287, Km 398",
     addressLocality: "Santiago",
     addressRegion: "RS",
     addressCountry: "BR",
-    postalCode: "DADO_A_CONFIRMAR",
   },
-  telephone: "+55-55-3251-1664",
-  email: "hotelacordes@hotmail.com",
+  telephone: "+55-55-3251-4200",
+  email: "reservas@saojoaopalacehotel.com.br",
   url: "DADO_A_CONFIRMAR",
-  priceRange: "DADO_A_CONFIRMAR",
+  priceRange: "$$",
   amenityFeature: [
     {
       "@type": "LocationFeatureSpecification",

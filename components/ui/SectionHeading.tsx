@@ -32,7 +32,7 @@ export function SectionHeading({
       <h2
         className="font-cormorant font-light leading-tight"
         style={{
-          fontSize: "clamp(2rem, 4vw, 3.25rem)",
+          fontSize: "clamp(1.75rem, 6vw, 3.25rem)",
           color: light ? "#F7F4EF" : "#202020",
         }}
       >

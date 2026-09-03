@@ -20,7 +20,7 @@ export default function Location() {
       style={{ background: "#FFFFFF" }}
     >
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-start">
           {/* Text */}
           <motion.div
             initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
@@ -29,14 +29,14 @@ export default function Location() {
           >
             <SectionHeading
               eyebrow="Localização"
-              headline="No centro de tudo em Santiago."
-              subheadline="A dois passos de restaurantes, comércio e serviços essenciais. Chegar até nós é simples."
+              headline="No segundo trevo de acesso a Santiago."
+              subheadline="Na BR 287, Km 398 — fácil acesso pela rodovia com estacionamento seguro no local."
             />
 
             <div className="mt-10 space-y-6">
               {/* Address card */}
               <div
-                className="p-7"
+                className="p-5 md:p-7"
                 style={{
                   background: "#F7F4EF",
                   border: "1px solid rgba(114,112,108,0.12)",
@@ -58,7 +58,7 @@ export default function Location() {
                     </p>
                     <p
                       className="font-cormorant font-light leading-snug"
-                      style={{ fontSize: "1.5rem", color: "#202020" }}
+                      style={{ fontSize: "clamp(1.125rem, 4vw, 1.5rem)", color: "#202020" }}
                     >
                       {hotel.address.street}
                     </p>
@@ -102,7 +102,7 @@ export default function Location() {
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "0.9375rem", color: "#72706C" }}
               >
-                Localizado na Rua Duque de Caxias, no centro histórico de Santiago, o Acordes Apart Hotel oferece fácil acesso a pé ou de carro para os principais pontos da cidade.
+                Localizado no segundo trevo de acesso à cidade de Santiago, o São João Palace Hotel oferece fácil acesso pela BR 287 e estacionamento seguro para todos os hóspedes.
               </p>
             </div>
           </motion.div>
@@ -121,14 +121,14 @@ export default function Location() {
               }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.3!2d-54.8680!3d-29.1900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua+Duque+de+Caxias%2C+810%2C+Centro%2C+Santiago%2C+RS!5e0!3m2!1spt!2sbr!4v1700000000000!5m2!1spt!2sbr"
+                src="https://maps.google.com/maps?q=São+João+Palace+Hotel+Santiago+RS&output=embed&z=15"
                 width="100%"
                 height="100%"
                 style={{ border: 0, display: "block", minHeight: "350px" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa — Acordes Apart Hotel"
+                title="Mapa — São João Palace Hotel"
               />
             </div>
           </motion.div>

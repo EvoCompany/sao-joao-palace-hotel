@@ -19,7 +19,7 @@ export default function About() {
       style={{ background: "#F7F4EF" }}
     >
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
           {/* Text Side */}
           <motion.div
             initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
@@ -28,27 +28,27 @@ export default function About() {
             className="max-w-xl"
           >
             <SectionHeading
-              eyebrow="Sobre o Acordes"
-              headline="Tudo o que você precisa para uma estadia tranquila."
+              eyebrow="Sobre o Hotel"
+              headline="A melhor opção no interior do Rio Grande do Sul."
             />
             <div className="mt-8 space-y-5">
               <p
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Localizado no coração de Santiago, o Acordes Apart Hotel foi pensado para receber quem busca conforto, praticidade e bom atendimento — seja para uma noite, uma semana ou uma estadia mais prolongada.
+                O São João Palace Hotel está localizado na BR 287, Km 398, no segundo trevo de acesso à cidade de Santiago. São 78 apartamentos equipados com TV a cabo, ar condicionado, ventilador de teto, frigobar, conexão para internet e telefone com discagem direta.
               </p>
               <p
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Nossa equipe cuida de cada detalhe para que você se sinta bem-vindo desde o momento em que chega. Quartos bem cuidados, café da manhã incluso, Wi-Fi e uma localização que coloca você no centro de tudo. Simples assim.
+                Ao lado do hotel está a Batista Churrascaria, com variado buffet e espeto corrido — mais uma comodidade para os hóspedes. Para eventos, disponibilizamos salas com capacidade de até 100 pessoas e equipamentos completos.
               </p>
               <p
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Para quem fica mais tempo, temos condições especiais. Para quem está de passagem, garantimos o descanso que você merece.
+                Seja para negócios, lazer ou uma estadia prolongada, o São João Palace Hotel oferece o conforto e a estrutura que você precisa em Santiago.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function About() {
                   className="font-cormorant font-light leading-snug"
                   style={{ fontSize: "1.375rem", color: "#202020" }}
                 >
-                  &ldquo;Uma hospedagem que se parece com um lar.&rdquo;
+                  &ldquo;Conforto e hospitalidade no interior gaúcho.&rdquo;
                 </p>
               </div>
             </div>
@@ -84,11 +84,10 @@ export default function About() {
               style={{ aspectRatio: "4/5", background: "#d6cfc4" }}
             >
               <HotelImage
-                src="/images/hotel/reception.jpg"
-                alt="Recepção do Acordes Apart Hotel"
+                src="/images/hotel/gallery-01.jpg"
+                alt="São João Palace Hotel — Santiago RS"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                label="reception.webp"
               />
             </div>
 

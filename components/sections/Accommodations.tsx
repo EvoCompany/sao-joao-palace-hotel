@@ -60,7 +60,7 @@ function RoomCard({
       >
         <HotelImage
           src={room.image}
-          alt={`Quarto ${room.name} — Acordes Apart Hotel`}
+          alt={`Quarto ${room.name} — São João Palace Hotel`}
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           label={`${room.id}-01.webp`}
@@ -83,7 +83,7 @@ function RoomCard({
 
       {/* Content */}
       <div
-        className="flex flex-col justify-center p-10 lg:p-14"
+        className="flex flex-col justify-center p-6 sm:p-8 lg:p-14"
         style={{ direction: "ltr" }}
       >
         <p
@@ -94,7 +94,7 @@ function RoomCard({
         </p>
         <h3
           className="font-cormorant font-light leading-tight mb-5"
-          style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)", color: "#202020" }}
+          style={{ fontSize: "clamp(1.5rem, 4.5vw, 2.75rem)", color: "#202020" }}
         >
           {room.name}
         </h3>

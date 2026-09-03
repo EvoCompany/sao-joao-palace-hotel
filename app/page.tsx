@@ -5,6 +5,7 @@ import BenefitsBar from "@/components/sections/BenefitsBar";
 import About from "@/components/sections/About";
 import Accommodations from "@/components/sections/Accommodations";
 import Amenities from "@/components/sections/Amenities";
+import Gallery from "@/components/sections/Gallery";
 import Breakfast from "@/components/sections/Breakfast";
 import Location from "@/components/sections/Location";
 import Reviews from "@/components/sections/Reviews";
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Accommodations />
         <Amenities />
+        <Gallery />
         <Breakfast />
         <Location />
         <Reviews />

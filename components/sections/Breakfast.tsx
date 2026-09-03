@@ -19,7 +19,7 @@ export default function Breakfast() {
       style={{ background: "#F7F4EF" }}
     >
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
           {/* Image */}
           <motion.div
             initial={shouldReduceMotion ? false : { opacity: 0, x: -40 }}
@@ -33,7 +33,7 @@ export default function Breakfast() {
             >
               <HotelImage
                 src="/images/hotel/breakfast.jpg"
-                alt="Café da manhã no Acordes Apart Hotel"
+                alt="Café da manhã no São João Palace Hotel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 label="breakfast.webp"
@@ -67,7 +67,7 @@ export default function Breakfast() {
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Preparado com cuidado, o café é mais um dos detalhes que tornam a estadia no Acordes uma experiência completa — do momento em que você acorda até a hora de sair.
+                Preparado com cuidado, o café é mais um dos detalhes que tornam a estadia no São João Palace Hotel uma experiência completa — do momento em que você acorda até a hora de sair.
               </p>
             </div>
 
