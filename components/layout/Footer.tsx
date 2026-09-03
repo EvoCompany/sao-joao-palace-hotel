@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import { hotel } from "@/lib/hotel-data";
 
@@ -143,7 +143,12 @@ export default function Footer() {
               className="flex items-center gap-1.5 font-inter font-light text-xs transition-colors duration-200"
               style={{ color: "rgba(247,244,239,0.3)" }}
             >
-              <Instagram className="w-3.5 h-3.5" />
+              {/* Instagram icon */}
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+              </svg>
               Instagram
             </a>
             <a
