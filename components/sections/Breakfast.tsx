@@ -61,39 +61,66 @@ export default function Breakfast() {
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                O café da manhã está incluso na sua hospedagem. Uma forma simples de garantir que você começa o dia com energia, sem preocupações extras.
+                O café da manhã está incluso na sua hospedagem. Aos sábados e domingos, desfrute do nosso variado Buffet de Café da Manhã — uma mesa farta para começar o dia com toda energia.
               </p>
               <p
                 className="font-inter font-light leading-relaxed"
                 style={{ fontSize: "1.0625rem", color: "#72706C" }}
               >
-                Preparado com cuidado, o café é mais um dos detalhes que tornam a estadia no São João Palace Hotel uma experiência completa — do momento em que você acorda até a hora de sair.
+                Preparado com cuidado, é mais um dos detalhes que tornam a estadia no São João Palace Hotel uma experiência completa.
               </p>
             </div>
 
-            <div
-              className="mt-10 inline-flex items-center gap-4 px-6 py-5"
-              style={{ background: "#FFFFFF", border: "1px solid rgba(114,112,108,0.12)" }}
-            >
+            <div className="mt-10 flex flex-col gap-3">
               <div
-                className="w-10 h-10 flex items-center justify-center flex-shrink-0"
-                style={{ background: "#F7F4EF" }}
+                className="inline-flex items-center gap-4 px-6 py-5"
+                style={{ background: "#FFFFFF", border: "1px solid rgba(114,112,108,0.12)" }}
               >
-                <span className="text-lg">☕</span>
+                <div
+                  className="w-10 h-10 flex items-center justify-center flex-shrink-0"
+                  style={{ background: "#F7F4EF" }}
+                >
+                  <span className="text-lg">☕</span>
+                </div>
+                <div>
+                  <p
+                    className="font-inter text-xs font-medium tracking-[0.15em] uppercase mb-0.5"
+                    style={{ color: "#8C352D" }}
+                  >
+                    Incluso em todas as diárias
+                  </p>
+                  <p
+                    className="font-cormorant font-light"
+                    style={{ fontSize: "1.125rem", color: "#202020" }}
+                  >
+                    Café da manhã para todos os hóspedes
+                  </p>
+                </div>
               </div>
-              <div>
-                <p
-                  className="font-inter text-xs font-medium tracking-[0.15em] uppercase mb-0.5"
-                  style={{ color: "#8C352D" }}
+              <div
+                className="inline-flex items-center gap-4 px-6 py-5"
+                style={{ background: "#FFFFFF", border: "1px solid rgba(114,112,108,0.12)" }}
+              >
+                <div
+                  className="w-10 h-10 flex items-center justify-center flex-shrink-0"
+                  style={{ background: "#F7F4EF" }}
                 >
-                  Incluso em todas as diárias
-                </p>
-                <p
-                  className="font-cormorant font-light"
-                  style={{ fontSize: "1.125rem", color: "#202020" }}
-                >
-                  Café da manhã para todos os hóspedes
-                </p>
+                  <span className="text-lg">🍽️</span>
+                </div>
+                <div>
+                  <p
+                    className="font-inter text-xs font-medium tracking-[0.15em] uppercase mb-0.5"
+                    style={{ color: "#8C352D" }}
+                  >
+                    Buffet — Sáb e Dom · 07h30 às 09h30
+                  </p>
+                  <p
+                    className="font-cormorant font-light"
+                    style={{ fontSize: "1.125rem", color: "#202020" }}
+                  >
+                    Reserve seu lugar no buffet do fim de semana
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>

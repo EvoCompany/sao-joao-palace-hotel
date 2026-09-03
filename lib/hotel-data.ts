@@ -1,6 +1,6 @@
 export const hotel = {
   name: "São João Palace Hotel",
-  tagline: "Conforto e hospitalidade na BR 287, no interior do Rio Grande do Sul.",
+  tagline: "O prazer de se sentir em casa.",
   address: {
     street: "BR 287, Km 398",
     district: "Segundo trevo de Santiago",
@@ -13,11 +13,11 @@ export const hotel = {
   whatsapp: "(55) 3251-4088",
   whatsappLink: "https://api.whatsapp.com/send?phone=555532514088",
   bookingEngine: "https://hbook.hsystem.com.br/Booking?companyId=615dfbd77a4136ecc8fb92e1",
-  instagram: null,
+  instagram: "https://www.instagram.com/saojoaopalacehotel/",
   googleMapsUrl:
     "https://maps.google.com/?q=BR+287,+Km+398,+Santiago,+RS",
-  checkIn: "DADO_A_CONFIRMAR",
-  checkOut: "DADO_A_CONFIRMAR",
+  checkIn: "12h",
+  checkOut: "12h",
   rooms: [
     {
       id: "solteiro-luxo",
