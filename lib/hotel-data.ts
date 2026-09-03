@@ -11,7 +11,7 @@ export const hotel = {
   phoneMobile: "(55) 98449-1088",
   email: "reservas@saojoaopalacehotel.com.br",
   whatsapp: "(55) 3251-4088",
-  whatsappLink: "https://api.whatsapp.com/send?phone=555532514088",
+  whatsappLink: "https://api.whatsapp.com/send/?phone=555532514088&text&type=phone_number&app_absent=0",
   bookingEngine: "https://hbook.hsystem.com.br/Booking?companyId=615dfbd77a4136ecc8fb92e1",
   instagram: "https://www.instagram.com/saojoaopalacehotel/",
   googleMapsUrl:
