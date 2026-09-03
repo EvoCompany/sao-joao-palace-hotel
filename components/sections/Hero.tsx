@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ChevronDown, MapPin, Coffee, Wifi } from "lucide-react";
 import { hotel } from "@/lib/hotel-data";
+import { HotelImage } from "@/components/ui/HotelImage";
 
 const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
@@ -32,17 +33,15 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ minHeight: "100svh" }}
     >
-      {/* Background Video */}
+      {/* Background Image */}
       <div className="absolute inset-0" style={{ background: "#4a4540" }}>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/hero-dolly-in.mp4" type="video/mp4" />
-        </video>
+        <HotelImage
+          src="/images/hotel/cover-banner.jpg"
+          alt="São João Palace Hotel — Santiago, RS"
+          fill
+          priority
+          sizes="100vw"
+        />
       </div>
 
       {/* Gradient Overlay */}

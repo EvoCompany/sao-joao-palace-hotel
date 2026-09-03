@@ -29,8 +29,8 @@ export default function FinalCTA() {
       {/* Background Image */}
       <div className="absolute inset-0" style={{ background: "#3a3530" }}>
         <HotelImage
-          src="/images/hotel/fachada.jpg"
-          alt="Fachada do Acordes Apart Hotel"
+          src="/images/hotel/gallery-01.jpg"
+          alt="São João Palace Hotel — Santiago, RS"
           fill
           sizes="100vw"
         />
@@ -55,7 +55,7 @@ export default function FinalCTA() {
             className="font-inter text-xs font-medium tracking-[0.22em] uppercase mb-6"
             style={{ color: "rgba(247,244,239,0.6)" }}
           >
-            Acordes Apart Hotel · Santiago — RS
+            São João Palace Hotel · Santiago — RS
           </p>
 
           <h2
@@ -124,7 +124,7 @@ export default function FinalCTA() {
             className="font-inter text-xs mt-6"
             style={{ color: "rgba(247,244,239,0.45)" }}
           >
-            Atendimento direto com o Acordes Apart Hotel.
+            Atendimento direto com a equipe do São João Palace Hotel.
           </p>
         </motion.div>
       </div>
